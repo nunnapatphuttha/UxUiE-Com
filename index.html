@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!--=============== animation ===============-->
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <title>Responsive watches website - Bedimcode</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class='bx bxs-watch nav__logo-icon'></i> STK
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">หน้าแรก</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">สินค้า</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#review" class="nav__link">รีวิว</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                <!-- <div class="nav__shop">
+                    <i class='bx bx-shopping-bag'></i>
+                </div> -->
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== CART ====================-->
+    <div class="cart" id="cart">
+        <i class='bx bx-x cart__close' id="cart-close"></i>
+
+        <h2 class="cart__title-center">My Cart</h2>
+
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/featured1.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">STK500</h3>
+                    <span class="cart__price">฿500</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus'></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus'></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash'></i>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-item">1 items</span>
+            <span class="cart__prices-total">฿500</span>
+        </div>
+    </div>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__img-bg">
+                    <img src="assets/img/home.png" alt="" class="home__img">
+                </div>
+
+
+
+                <div class="home__data">
+                    <h1 class="home__title"><span style="color: rgb(232, 71, 71);">ใหม่!</span> STK1002 <br>
+                        <span style="font-size: 1.5rem;">รองเท้าคู่ใจ เอาใจวัยรุ่น</span>
+                    </h1>
+                    <p class="home__description">
+                        รองเท้าแฟชันฤดูร้อน เหมาะสำหรับสายเดิน วิ่ง เที่ยว.
+                    </p>
+                    <span class="home__price">฿1,500</span>
+
+                    <div class="home__btns">
+                        <a href="#" class="button button--gray button--small">
+                            Discover
+                        </a>
+
+                        <button class="button home__button " id="cart-shop"><i class='bx bx-cart-download'
+                                style="font-size: 1.5rem;"></i> เพิ่มลงรถเข็น</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== สินค้า ====================-->
+        <section class="featured section container" id="featured">
+            <h2 class="section__title">
+                สินค้าของเรา
+            </h2>
+
+            <div class="featured__container grid">
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+
+                    <img src="assets/img/featured1.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">STK500</h3>
+                        <span class="featured__price">฿500</span>
+                    </div>
+
+                    <button class="button featured__button" id="cart-shop"><i class='bx bx-cart-download'
+                            style="font-size: 1.5rem;"></i>ADD TO
+                        CART</button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag" style="background-color: rgb(232, 71, 71);">Sale</span>
+
+                    <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">STK510</h3>
+                        <span class="featured__price">฿999</span>
+                    </div>
+
+                    <button class="button featured__button"><i class='bx bx-cart-download'
+                            style="font-size: 1.5rem;"></i>ADD TO CART</button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+
+                    <img src="assets/img/featured3.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">STK1000</h3>
+                        <span class="featured__price">฿990</span>
+                    </div>
+
+                    <button class="button featured__button"><i class='bx bx-cart-download'
+                            style="font-size: 1.5rem;"></i>ADD TO CART</button>
+                </article>
+            </div>
+        </section>
+
+
+
+        <!--==================== TESTIMONIAL ====================-->
+        <section id="review" class="testimonial section container">
+            <div class="testimonial__container grid">
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left'></i>
+                            </div>
+                            <p class="testimonial__description">
+                                รองเท้าใส่ดีมากค่ะ ราคาประหยัด คุ้มสุด ๆ
+                            </p>
+                            <h3 class="testimonial__date">ตุลาคม 27. 2565</h3>
+
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/p1.jpg" alt="" class="testimonial__perfil-img">
+
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">ลิซ่า</span>
+                                    <span class="testimonial__perfil-detail">Net Idol</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left'></i>
+                            </div>
+                            <p class="testimonial__description">
+                                ลีอา ไว้ใจผลิตภัณฑ์แบรนด์นี้มา 3 ปีแล้วค่ะ
+                            </p>
+                            <h3 class="testimonial__date">กันยายน 20. 2565</h3>
+
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/p2.jpg" alt="" class="testimonial__perfil-img">
+
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">ลีอา</span>
+                                    <span class="testimonial__perfil-detail">เจ้าของกิจการสนามกีฬา</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left'></i>
+                            </div>
+                            <p class="testimonial__description">
+                                ทุกครั้งที่ผมออกวิ่ง ต้องพกรองเท้าคู่ใจไปด้วย หนีไม่พ้น STK
+                            </p>
+                            <h3 class="testimonial__date">กันยายน 1. 2565</h3>
+
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/p3.jpg" alt="" class="testimonial__perfil-img">
+
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">คริส</span>
+                                    <span class="testimonial__perfil-detail">นักวิ่งมืออาชีพ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-left-arrow-alt'></i>
+                    </div>
+                </div>
+
+                <div class="testimonial__images">
+                    <div class="testimonial__square"></div>
+                    <img src="assets/img/testimonial.jpg" style="border-radius: 20px;" alt="" class="testimonial__img">
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+
+
+            <span class="footer__copy">&#169; BY Shitikorn 65080701707</span>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+        </a>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+</body>
+
+</html>
